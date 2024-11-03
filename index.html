@@ -50,11 +50,67 @@
             </li>
           </ul>
         </address>
-        <svg width="24" height="24" class="header-menu">
-          <use href="./images/icons.svg#multiply-menu"></use>
-        </svg>
+        <button type="button" class="button-menu">
+          <svg width="24" height="24" class="header-menu">
+            <use href="./images/icons.svg#multiply-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <div class="menu-backdrop">
+      <button class="close-backdrop" type="button">
+        <svg width="8" height="8" class="close-svg">
+          <use href="./images/icons.svg#vector-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-list">
+        <li class="menu-list-elem">
+          <a href="./index.html" class="menu-list-hyper active-menu-elem"
+            >Studio</a
+          >
+        </li>
+        <li class="menu-list-elem">
+          <a href="" class="menu-list-hyper">Portfolio</a>
+        </li>
+        <li class="menu-list-elem">
+          <a href="" class="menu-list-hyper">Contacts</a>
+        </li>
+      </ul>
+      <ul class="menu-list-adddress">
+        <li class="menu-list-address active-menu-elem">+11 (000) 111-11-11</li>
+        <li class="menu-list-address">info@devstudio.com</li>
+      </ul>
+      <ul class="social-networks menu-social-networks">
+        <li class="social-network-elem">
+          <a href="" class="social-network-hyper">
+            <svg width="16" height="16" class="svg-elem soc-network">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-network-elem">
+          <a href="" class="social-network-hyper">
+            <svg width="16" height="16" class="svg-elem soc-network">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-network-elem">
+          <a href="" class="social-network-hyper">
+            <svg width="16" height="16" class="svg-elem soc-network">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-network-elem">
+          <a href="" class="social-network-hyper">
+            <svg width="16" height="16" class="svg-elem soc-network">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <main>
       <section class="f-sel section">
         <div class="container">
@@ -412,7 +468,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-full-info">
         <div class="info-footer footer-box">
           <a href="./index.html" class="logo footer-logo">
@@ -476,8 +532,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
-    <!-- <div class="backdrop is-open">
+    </footer>
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="close-backdrop" type="button">
           <svg width="8" height="8" class="close-svg">
@@ -565,6 +621,6 @@
           <button type="submit" class="send-button">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
