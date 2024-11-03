@@ -141,9 +141,45 @@ span {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 120px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .logo {
+    margin-right: 76px;
+  }
+}
+
 .header-list {
-  align-self: center;
+  display: none;
+}
+
+.address {
+  display: none;
+}
+
+.address-list {
   gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-list {
+    display: flex;
+    align-self: center;
+    gap: 40px;
+  }
+  .address {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    margin-left: auto;
+    padding: 24px 0;
+  }
 }
 
 .active::after {
@@ -155,20 +191,6 @@ span {
   position: absolute;
   bottom: -1px;
   left: 0;
-}
-
-.address {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  font-style: normal;
-  margin-left: auto;
-  padding: 24px 0;
-}
-
-.address-list {
-  gap: 40px;
 }
 
 nav li,
@@ -212,6 +234,10 @@ nav li,
 .active {
   position: relative;
   color: #404bbf;
+}
+
+.header-menu {
+  fill: #111;
 }
 
 .f-sel {
@@ -594,7 +620,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 72px;
-  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -604,9 +629,15 @@ footer {
     gap: 72px 24px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .footer-full-info {
+    max-width: 584px;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .footer-full-info {
-    flex-flow: row;
+    gap: unset;
   }
 }
 
